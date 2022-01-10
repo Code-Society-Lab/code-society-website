@@ -1,0 +1,119 @@
+:root {
+    /* Backgrounds */
+    --background-color-primary: #F4C308;
+    --background-color-secondary: #FFFFFF;
+    --background-color-gaming: #010101;
+
+    /* Text color */
+    --text-color-primary: #FFFFFF;
+    --text-color-gaming: #FFFFFF;
+}
+
+/* Boostrap overrides  */
+.bg-primary {
+    background-color: var(--background-color-primary) !important;
+    color: var(--text-color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--background-color-secondary) !important;
+}
+
+.btn.btn-primary {
+    border: 2px solid var(--background-color-primary) !important;
+    border-radius: 50px;
+
+    background-color: white;
+    color: var(--background-color-primary) !important;
+    font-weight: bold;
+}
+
+.btn.btn-primary:active {
+    background-color: var(--background-color-primary) !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.btn-xl {
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+}
+
+/* Tag style */
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    color: var(--background-color-primary) !important;
+}
+
+/* Header */
+#header > .banner .logo {
+    width: 100%;
+}
+
+#header > .banner .title {
+    font-size: 70px;
+    line-height: 1
+}
+
+#header > .banner .description {
+    font-size: 40px;
+}
+
+#header > .banner .row {
+    flex-direction: row;
+}
+
+/* Info boxes */
+#info > .info-container .separation {
+    border-bottom: 1.5vw solid var(--background-color-primary);
+}
+
+#info > .info-container img {
+    width: 250px;
+}
+
+#info > .info-container .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#info > .info-container .description {
+    font-size: 25px;
+}
+
+@media (max-width: 992px){
+    /* Header */
+    #header > .banner {
+        text-align: center;
+    }
+
+    #header > .banner .logo {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    #header > .banner .description {
+        font-size: 25px;
+    }
+
+    #header > .banner .row {
+        flex-direction: column;
+    }
+
+    #info > .info-container img {
+        width: 150px;
+    }
+
+    #info > .info-container .separation.left {
+        margin-left: 20px;
+    }
+
+    #info > .info-container .separation.right {
+        margin-right: 20px;
+    }
+}
