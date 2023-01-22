@@ -89,6 +89,7 @@ a {
 #info > .info-container .box {
     margin: 100px 0px;
 }
+
 @media (max-width: 992px){
     /* Header */
     #header > .banner {
