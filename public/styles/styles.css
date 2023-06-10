@@ -55,7 +55,7 @@ a {
 }
 
 #header > .banner .logo {
-    background-color: white;
+    background-color: var(--background-color-dark);
 
     width: 300px;
     padding: 50px;
