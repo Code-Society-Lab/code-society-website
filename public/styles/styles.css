@@ -2,10 +2,10 @@
     /* Backgrounds */
     --background-color-primary: #F4C308;
     --background-color-secondary: #FFFFFF;
-    --background-color-gaming: #010101;
+    --background-color-dark: #000000;
 
     /* Text color */
-    --text-color-primary: #FFFFFF;
+    --text-color-primary: #000000;
     --text-color-gaming: #FFFFFF;
 }
 
@@ -19,19 +19,23 @@
     background-color: var(--background-color-secondary) !important;
 }
 
+.bg-darker {
+    background-color: var(--background-color-dark);
+}
+
 .btn.btn-primary {
     border: 2px solid var(--background-color-primary) !important;
     border-radius: 50px;
 
-    background-color: white;
+    background-color: var(--background-color-dark);
     color: var(--background-color-primary) !important;
     font-weight: bold;
 }
 
 .btn.btn-primary:active {
     background-color: var(--background-color-primary) !important;
-    color: white !important;
-    border-color: white !important;
+    color: var(--background-color-dark) !important;
+    border-color: var(--background-color-dark) !important;
 }
 
 .btn-xl {
@@ -50,9 +54,16 @@ a {
     color: var(--background-color-primary) !important;
 }
 
-/* Header */
 #header > .banner .logo {
-    width: 100%;
+    background-color: white;
+
+    width: 300px;
+    padding: 50px;
+}
+
+#header > .banner .logo > img {
+    width: 200px;
+    height: 200px;
 }
 
 #header > .banner .title {
@@ -98,7 +109,15 @@ a {
 
     #header > .banner .logo {
         width: 150px;
+        height: 150px;
+
+        padding: 25px;
         margin-bottom: 30px;
+    }
+
+    #header > .banner .logo > img {
+        width: 100px;
+        height: 100px;
     }
 
     #header > .banner .description {
