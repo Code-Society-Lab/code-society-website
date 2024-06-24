@@ -1,117 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Metas -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="author" content="Malassi :)">
-        <meta name="title" content="The official Code Society website">
 
-        <!-- Boostrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<head>
+    <!-- Metas -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Malassi :)">
+    <meta name="title" content="The official Code Society website">
 
-        <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/ui/9.6.2/firebase-ui-auth.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/9.6.2/firebase-ui-auth.css" />
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="icon" type="image/png" href="images/code_society_round.png">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-        <title>Code Society</title>
-    </head>
-    <body class="vh-100">
-        <section id="header" class="bg-primary">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col p-2">
-                            <a href="https://github.com/Code-Society-Lab">
-                                <img src="images/github.svg" height="40" width="40">
-                            </a>
-                        </div>
-                        <div class="col p-2">
-                            <a href="https://discord.gg/FzgwHD7Am3">
-                                <img src="images/discord.svg" height="40" width="40">
-                            </a>
-                        </div>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/ui/9.6.2/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/9.6.2/firebase-ui-auth.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="images/code_society_round.png">
+
+    <title>Code Society</title>
+</head>
+
+<body class="vh-100">
+    <section id="header" class="bg-primary">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col p-2">
+                        <a href="https://github.com/Code-Society-Lab">
+                            <img src="images/github.svg" height="40" width="40">
+                        </a>
                     </div>
-                </div>
-            </nav>
-            <div class="container banner d-flex flex-fill">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="logo mx-auto rounded-circle">
-                            <img src="images/code_society.svg">
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <p class="title">Code Society</p>
-                        <p class="description">We are a friendly community of programmers and scientists of all levels, backgrounds and all over the world!</p>
-                        <a class="btn btn-xl btn-primary" href="https://discord.gg/FzgwHD7Am3">Join now</a>
+                    <div class="col p-2">
+                        <a href="https://discord.gg/FzgwHD7Am3">
+                            <img src="images/discord.svg" height="40" width="40">
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="info" class="bg-secondary">
-            <div class="container-fluid info-container d-flex flex-fill">
-                <div class="flex-fill">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <img src="images/rocket.svg">
-                            </div>
+        </nav>
+        <div class="container banner d-flex flex-fill">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <div class="logo mx-auto rounded-circle">
+                        <img src="images/code_society.svg">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <p class="title">Code Society</p>
+                    <p class="description">We are a friendly community of programmers and scientists of all levels,
+                        backgrounds and all over the world!</p>
+                    <a class="btn btn-xl btn-primary" href="https://discord.gg/FzgwHD7Am3">Join now</a>
+                </div>
+            </div>
+            <div class="floating-arrow">
+                <img src="images/arrow.svg" id="scroll-down" style="cursor: pointer;">
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="bg-secondary">
+        <div class="container-fluid info-container d-flex flex-fill">
+            <div class="flex-fill">
+                <!-- Our Goal Section -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <img src="images/rocket.svg">
                         </div>
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center separation left">
-                            <div class="row flex-column align-items-center box">
-                                <div class="col-md-6">
-                                    <p class="title">Our goal</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="description">The Code Society as for goal to help programmers, scientists and other to find each other to discuss programming, new technologies, science and more!</p>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center separation left">
+                        <div class="row flex-column align-items-center box">
+                            <div class="col-md-6">
+                                <p class="title">Our goal</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="description">The Code Society has for goal of helping programmers, scientists and
+                                    other to find each other to discuss programming, new technologies, science, and more!
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-row-reverse">
-                        <div class="col-lg-6">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <img src="images/robot.svg" style="width:200px; height:200px;">
-                            </div>
+                </div>
+                <!-- Custom Bot Section -->
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <img src="images/robot.svg" style="width:200px; height:200px;">
                         </div>
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center separation right">
-                            <div class="row flex-column align-items-center my-5">
-                                <div class="col-md-6">
-                                    <p class="title">Custom bot</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="description">Our custom bot, called <a href="https://github.com/Code-Society-Lab/grace">Grace</a>, is open source. We invite everyone to contribute. It's a greate way to make your first contribution and work with other programmers on a cool project.</p>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center separation right">
+                        <div class="row flex-column align-items-center my-5">
+                            <div class="col-md-6">
+                                <p class="title">Custom bot</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="description">Our custom bot, called <a
+                                        href="https://github.com/Code-Society-Lab/grace">Grace</a>, is open source. We
+                                    invite everyone to contribute. It's a great way to make your first contribution and
+                                    work with other programmers on a cool project.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <img src="images/code.svg">
+                </div>
+                <!-- Cursif Section -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <img src="images/code.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center separation left">
+                        <div class="row flex-column align-items-center my-5">
+                            <div class="col-md-6">
+                                <p class="title">Cursif</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="description"><a href="https://github.com/Code-Society-Lab/cursif">Cursif</a>
+                                    is a collaborative, scriptable, and flexible note-taking application that aims to
+                                    help teams manage their projects.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-flex justify-content-center align-items-center separation left">
-                            <div class="row flex-column align-items-center my-5">
-                                <div class="col-md-6">
-                                    <p class="title">Cursif</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="description"><a href="https://github.com/Code-Society-Lab/cursif">Cursif</a> is a collaborative, scriptable and flexible note taking application that aimes to help teams manage their projects.</p>
-                                </div>
+                    </div>
+                </div>
+                <!-- Resources Section -->
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center h-100 mt-2">
+                            <img src="images/books.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center separation right">
+                        <div class="row flex-column align-items-center my-5">
+                            <div class="col-md-6">
+                                <p class="title">Resources</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="description">Our <a href="https://resources.codesociety.xyz">library</a>
+                                        is a collection of resources put together by the members of 
+                                        the Code Society for various programming and software development 
+                                        subjects that we have found useful. It's a great place to find books, 
+                                        articles, videos, and more to help you learn and grow as a programmer or scientist.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+
+    <!-- JavaScript for smooth scrolling when arrow clicked -->
+    <script>
+        document.getElementById('scroll-down').addEventListener('click', function (e) {
+            e.preventDefault();
+            setTimeout(function () {
+                document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+        });
+    </script>
+</body>
+
 </html>
