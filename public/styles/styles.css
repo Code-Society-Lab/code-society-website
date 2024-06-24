@@ -82,7 +82,7 @@ a {
 
 /* Info boxes */
 #info > .info-container .separation {
-    border-bottom: 1.5vw solid var(--background-color-primary);
+    border-bottom: 30px solid var(--background-color-primary);
 }
 
 #info > .info-container img {
@@ -143,6 +143,10 @@ a {
 
     .floating-arrow {
         display: none;
+    }
+
+    img {
+        margin-top: 30px;
     }
 }
 
