@@ -52,22 +52,20 @@ window.addEventListener('DOMContentLoaded', function(){
         });
     });
     
-    const descriptions = document.querySelectorAll('.description');
-    descriptions.forEach((description) => {
-        const splitDesc = new SplitText(description, {type: "words"});
+    const description = document.querySelector('.description');
+    const splitDesc = new SplitText(description, {type: "words"});
         
-        tl.from(splitDesc.words, {
-            opacity: 0,
-            y: 20,
-            stagger: 0.03,
-            duration: 0.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: description,
-                start: "top 85%",
-                toggleActions: "play none none none"
-            }
-        });
+    tl.from(splitDesc.words, {
+        opacity: 0,
+        y: 20,
+        stagger: 0.03,
+        duration: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: description,
+            start: "top 85%",
+            toggleActions: "play none none none"
+        }
     });
 
     tl.from('.cta-join', {
