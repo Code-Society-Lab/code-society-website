@@ -178,15 +178,10 @@
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
     <!-- JavaScript for smooth scrolling when arrow clicked -->
     <script>
-        document.getElementById('scroll-down').addEventListener('click', function (e) {
-            e.preventDefault();
-            setTimeout(function () {
-                document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
-            }, 500);
-        });
-        new Lenis({
+        const lenis = new Lenis({
           autoRaf: true,
         });
+        document.getElementById('scroll-down').addEventListener('click', (e) => lenis.scrollTo("#info"));
     </script>
 </body>
 
