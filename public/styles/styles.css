@@ -1,12 +1,16 @@
 :root {
     /* Backgrounds */
-    --background-color-primary: #F4C308;
-    --background-color-secondary: #FFFFFF;
+    --background-color-primary: #f4c308;
+    --background-color-secondary: #fffff;
     --background-color-dark: #000000;
 
     /* Text color */
     --text-color-primary: #000000;
-    --text-color-gaming: #FFFFFF;
+    --text-color-gaming: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Boostrap overrides  */
